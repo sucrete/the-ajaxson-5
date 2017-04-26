@@ -2,26 +2,32 @@
 <html>
 <head>
     <title>AJAXson 5</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
     <script type="text/javascript" src="AJAXson5.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/ajaxonion5.css" type="text/css"/>
 </head>
-<body>
-    <h1> AJAXson 5</h1>
+<body class="container-fluid">
+  <section align="center" class="container" style="">
+    <h1 class="">AJAXson 5</h1>
 
-    <form id="form-gif-request" >
-        <label>What kind of Jackson 5 related gif do you want?</label>
-        <input id="tag" type="text" value=""/>
+    <form align="center" class="input-group" id="form-gif-request">
+        <label>What kind of Jackson 5 related gif do you want?</label><br/>
+        <input id="tag" type="text" value="" style="width: 100%"/>
         <br/><br/><br/>
 
 
-       <label>Prove you are not a robot by answering this riddle:</label><br/><br/>
-       <input id="finishthis" placeholder="how many" value=""/><label id="goodjackson">Jacksons are better than 1?</label><br/><br/>
-       <input type="submit" value="Get my Gif!" />
+       <label>Prove you are not a robot by answering this riddle:</label><br/>
+       <input id="finishthis" style="width: 100%" placeholder="how many Jacksons are better than 1?" value=""/><br/><br/>
+       <input class="btn btn-default" type="submit" value="Get my Gif!" />
     </form><br/>
-    <img id="loader" src="http://investinindia.sulekha.com/common/images/other/loading-small.gif" hidden="true"/><br/>
-    <img id="gif" src=""/>
+    <div id="loaderboi" hidden="true">Loading</div>
+    <img id="loader" src="http://a.academia-assets.com/images/friend_finder/loading.gif" hidden="true"/><br/>
+    <img id="gif" hidden="true" src=""/>
     <p id="feedback" hidden="true"></p>
-
+  </section>
 </body>
 </html>
