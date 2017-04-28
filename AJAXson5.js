@@ -36,7 +36,7 @@ function fetchAndDisplayGif(event) {
     var params = {
 
         api_key : "dc6zaTOxFJmzC",
-        tag : searchQuery
+        tag : searchQuery + "michael jackson"
     };
 
     $("#loader").attr("hidden", false);
@@ -51,7 +51,7 @@ function fetchAndDisplayGif(event) {
             $("#loader").attr("hidden", true);
             $("#loaderboi").attr('hidden', true);
             $("#finishthis").attr('style', "");
-            
+
             $("#gif").attr("hidden", false);
             $("#tag").attr('style', "width: 100%;");
           });
